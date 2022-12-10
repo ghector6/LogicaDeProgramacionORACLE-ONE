@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+
+<h1>Programa Calculo IMC</h1>
+
+<script>
+
+	function saltarLinea() {
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");		
+	}
+
+	function imprimir(frase) {
+		document.write(frase);
+		saltarLinea();
+	}
+
+	pesoHector = 115 ;
+	alturaHector = 1.86;
+	imcHector = pesoHector / (alturaHector * alturaHector);
+
+	imprimir("El IMC de Hec es : " + imcHector);
+
+
+</script>
+
