@@ -15,16 +15,17 @@
 		saltarLinea();
 	}
 
-	function calcularImc() {
+	function calcularImc(peso,altura) {
 
 		imc = peso / (altura * altura);
+		return(imc);
 
 	}
 
 	pesoHector = 115 ;
 	alturaHector = 1.86;
 	//imcHector = pesoHector / (alturaHector * alturaHector);
-	calcularImc(pesoHector,alturaHector);
+	imcHector = calcularImc(pesoHector,alturaHector);
 	imprimir("El IMC de Hec es : " + imcHector);
 
 	pesoEric = 86 ;
