@@ -1,18 +1,24 @@
 <meta charset="UTF-8">
 
 <script>
+
+	function saltarLinea() {
+		document.write("<br>");
+	}
+
 	var anho = 2022;
 	var saltoLinea = "<br><br><br>"
 
 	document.write("Hector tiene: " + (anho - 1992 ) + " anos");
-	document.write(saltoLinea);
+	saltarLinea(20);
 
 	document.write("Ricardo tiene: " + (anho - 1962 ) + " anos");	
-	document.write(saltoLinea);
+	saltarLinea();
 
     anho = 2030
-    
+
     document.write("Carlo tiene: " + (anho - 1994 ) + " anos");
-    document.write(saltoLinea);
+    saltarLinea();
+    
 </script>
 
