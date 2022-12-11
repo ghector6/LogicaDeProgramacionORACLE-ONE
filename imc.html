@@ -16,13 +16,10 @@
 	}
 
 	function calcularImc(peso,altura) {
-
-		imc = peso / (altura * altura);
-		return imc
+		
+		return peso / (altura * altura);
 
 	}	
-	var imcHec = calcularImc(115,1.86)
-	var imcJuan = calcularImc(100,1.90)
 	
 	imprimir( "El promedio calculado de Hector y Juean es de: " + (calcularImc(115,1.86) + calcularImc(100,1.90)) / 2);
 	
