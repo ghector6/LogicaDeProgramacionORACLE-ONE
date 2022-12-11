@@ -20,13 +20,13 @@
 		return peso / (altura * altura);
 
 	}	
-	
-	pesoInformado = prompt("Informe su peso")
-	alturaInformada = prompt("Informe su altura")
+	nombre = prompt("Informe su nombre")
+	pesoInformado = prompt(nombre + " Informe su peso")
+	alturaInformada = prompt(nombre + " Informe su altura")
 
 	imcCalculado = calcularImc(pesoInformado,alturaInformada)
 
-	imprimir( "El IMC calculado: " + imcCalculado);
+	imprimir( nombre +" El IMC calculado: " + imcCalculado);
 	
 </script>
 
