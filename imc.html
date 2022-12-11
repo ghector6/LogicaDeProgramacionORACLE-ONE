@@ -15,15 +15,16 @@
 		saltarLinea();
 	}
 
-	function calcularImc(peso1,altura1,nombre1,peso2,altura2,nombre2) {
+	function calcularImc(peso,altura) {
 
-		imc1 = peso1 / (altura1 * altura1);
-		imc2 = peso2 / (altura2 * altura2);
-		imprimir("el IMC promediado de  " + nombre1 + " y " + nombre2 + " es de: " + (imc1 + imc2) / 2);
+		imc = peso / (altura * altura);
+		return 10
 
 	}	
+	var imcHec = calcularImc(115,1.86)
+	var imcJuan = calcularImc(100,1.90)
 	
-	calcularImc(115,1.86,"Hector",100,1.90,"Juan");
-	calcularImc(50,1.63,"Sofia",59,1.70,"Claudia");
+	imprimir( "El promedio calculado de Hector y Juean es de: " + (imcHec + imcJuan) / 2);
+	
 </script>
 
