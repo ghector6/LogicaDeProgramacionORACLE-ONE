@@ -19,9 +19,13 @@
 	var contador = 1;
 	while (contador <= numeroMiembros ){
 
+		var totalEdades = 0;
 		edad = parseInt(prompt("ingrese la edad del familiar"));
+		totalEdades = totalEdades + edad;
 		contador = contador + 1;
 	}
+	imprimir(totalEdades);
+	imprimir("fin");
 
 	
 </script>
