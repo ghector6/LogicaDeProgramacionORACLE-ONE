@@ -27,6 +27,18 @@
 	imcCalculado = calcularImc(pesoInformado,alturaInformada)
 
 	imprimir( nombre +" El IMC calculado: " + imcCalculado);
-	
+
+	if (imcCalculado < 18.5) {
+		imprimir("IMC abajo de lo recomendado")
+	}
+	/*if(imc < 18.5) {
+		imprimir("IMC considerado como obesidad")
+	}
+	if(imc < 18.5) {
+		imprimir("IMC considerado como obesidad")
+	}*/
+	if (imcCalculado >= 30) {
+		imprimir("IMC considerado como obesidad")
+	}
 </script>
 
