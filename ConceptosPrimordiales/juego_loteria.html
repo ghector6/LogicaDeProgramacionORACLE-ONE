@@ -1,0 +1,37 @@
+<meta charset="UTF-8">
+
+<h1>JUEGO DE ADIVINACION</h1>
+
+<script>
+
+	function saltarLinea() {
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");		
+	}
+
+	function imprimir(frase) {
+		document.write(frase);
+		saltarLinea();
+	}
+
+	function sorteo (n) {
+
+		return Math.round(Math.random()*n);
+
+	}
+
+	var numeroPensado = sorteo(2);
+	var numeroLanzado = parseInt(prompt("Ingrese un numero"))
+
+	if (numeroPensado == numeroLanzado) {
+		imprimir("usted acerto")
+	}else {
+		imprimir("usted falló, el numero es: " + numeroPensado)
+	}
+
+	
+
+	
+</script>
+
