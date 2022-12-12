@@ -20,30 +20,36 @@
 		return peso / (altura * altura);
 
 	}	
-	nombre = prompt("Informe su nombre")
-	pesoInformado = prompt(nombre + " Informe su peso")
-	alturaInformada = prompt(nombre + " Informe su altura")
+	nombre = prompt("Informe su nombre");
+	pesoInformado = prompt(nombre + " Informe su peso");
+	alturaInformada = prompt(nombre + " Informe su altura");
 
 	imcCalculado = calcularImc(pesoInformado,alturaInformada)
 
 	imprimir( nombre +" El IMC calculado: " + imcCalculado);
 
 	if (imcCalculado < 18.5) {
-		imprimir("IMC abajo de lo recomendado")
+		imprimir("IMC abajo de lo recomendado");
 	}
 
 	if  (imcCalculado >= 18.5) {
 
 		if (imcCalculado < 25){
 
-			imprimir("IMC considerado dentro del rango normal")
+			imprimir("IMC considerado dentro del rango normal");
 
 		}
 		
 	}
-	//if(imc < 18.5) {
-	//	imprimir("IMC considerado como obesidad")
-	//}
+	if  (imcCalculado >= 25) {
+
+		if (imcCalculado < 30){
+
+			imprimir("IMC considerado dentro del sobrepeso");
+
+		}
+		
+	}
 
 	if (imcCalculado >= 30) {
 		imprimir("IMC considerado como obesidad")
