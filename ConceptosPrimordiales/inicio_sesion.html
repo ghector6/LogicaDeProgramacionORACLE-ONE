@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+<script>
+
+    var inicioDeSesionRegistrado = "alura";
+    var contrasenhaRegistrada = "alura321";    
+    var intentos = 1;
+    while (intentos <= 3){
+        var inicioDeSesionIngresado = prompt("Ingrese su usuario");// Hay que meter el prompt en el lloop para que prgunte cade vez
+        var contrasenhaIngresada = prompt("Ingrese su contraseña");
+
+        if( inicioDeSesionRegistrado == inicioDeSesionIngresado && contrasenhaRegistrada == contrasenhaIngresada ) {
+            alert("Bienvenido al sistema " + inicioDeSesionIngresado);
+            break;
+        } else {
+            if(intentos == 3){
+                alert("AGOTASTE TU NUMERO DE INTENTOS");
+            }else{
+                alert("Inicio de sesion invalido, intente de nuevo");
+            }
+            
+        }
+        intentos ++
+        
+
+    }
+
+    
+</script>
