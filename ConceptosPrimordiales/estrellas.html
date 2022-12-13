@@ -5,8 +5,6 @@
 <script>
 
 	function saltarLinea() {
-		document.write("<br>");
-		document.write("<br>");
 		document.write("<br>");		
 	}
 
@@ -15,7 +13,13 @@
 		saltarLinea();
 	}
 	for(var lineas = 1; lineas <= 3; lineas++){
-		imprimir("**********");
+		for(var columnas = 1; columnas <= 10; columnas++){
+
+			document.write("*");
+		}
+		saltarLinea();
+		saltarLinea();
+		
 
 	}
 
